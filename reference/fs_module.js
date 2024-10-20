@@ -12,10 +12,11 @@ fs.rmdir("/test2", {}, (err) => {
   console.log("Folder 2 removed")
 })
 
+// Write or create a new file
 fs.writeFile(
   path.join(__dirname, '/test', 'hello.txt'), 
   'Hello world! ', 
-  (err) => {
+  (err) => { 
   if (err) throw err
   console.log('File written to...');
 
@@ -41,10 +42,10 @@ fs.readFile(
 
 // Rename file
 
-fs.rename(
-  path.join(__dirname, '/test', 'hello.txt'), 
-  path.join(__dirname, '/test', 'helloWorld.txt'), 
-  (err) => {
-  if (err) throw err
-  console.log("File renamed...")
-});
+// fs.rename(
+//   path.join(__dirname, '/test', 'hello.txt'), 
+//   path.join(__dirname, '/test', 'helloWorld.txt'), 
+//   (err) => {
+//   if (err) throw err
+//   console.log("File renamed...")
+// });
